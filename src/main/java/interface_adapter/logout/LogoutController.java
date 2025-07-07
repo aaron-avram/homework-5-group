@@ -18,8 +18,9 @@ public class LogoutController {
      * @param username the username of the user logging in
      */
     public void execute(String username) {
-        // TODO: run the use case interactor for the logout use case
         // 1. instantiate the `LogoutInputData`, which should contain the username.
+        use_case.logout.LogoutInputData logoutInputData = new use_case.logout.LogoutInputData(username);
         // 2. tell the Interactor to execute.
+        logoutUseCaseInteractor.execute(logoutInputData);
     }
 }
