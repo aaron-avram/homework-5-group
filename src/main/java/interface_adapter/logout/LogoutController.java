@@ -24,6 +24,5 @@ public class LogoutController {
         LogoutInputData logoutData = new LogoutInputData(username);
         // 2. tell the Interactor to execute.
         this.logoutUseCaseInteractor.execute(logoutData);
-
     }
 }
