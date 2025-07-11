@@ -30,3 +30,6 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+# Exclude folder named '.idea'
+.idea/
